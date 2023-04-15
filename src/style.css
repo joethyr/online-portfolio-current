@@ -1,0 +1,133 @@
+:root {
+  --rich-black: #0e1116;
+  --bright-green: #6bd425;
+  --dark-green: #3d8011;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+  background-image: linear-gradient(90deg, #0e1116, #112342);
+}
+
+section {
+  height: 100vh;
+}
+
+.hero {
+  font-size: 30px;
+  color: white;
+}
+
+footer {
+  height: 500px;
+  background-color: black;
+}
+
+nav * {
+  font-size: 1.2rem;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  width: 500px;
+  justify-content: space-around;
+  margin: 1rem;
+}
+
+li {
+  text-decoration: none;
+}
+
+/* .hero-text > h2 {
+  margin-bottom: 0;
+} */
+
+.typewriter {
+  display: inline-block;
+}
+
+.typewriter h2 {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid #0d6efd; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 2.5s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #0d6efd;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.hero-container {
+  display: flex;
+  /* flex-direction: column; */
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button {
+  margin-top: 1rem;
+  padding-top: 0.6rem;
+  width: 170px;
+  height: 50px;
+  border-radius: 10rem;
+  text-align: center;
+  background-color: var(--bright-green);
+  color: white;
+}
+
+.button:hover,
+.button:active {
+  background-color: var(--dark-green);
+}
+
+.social-links {
+  padding-bottom: 9rem;
+  margin-left: 0.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.social-links * {
+  margin: 0.85rem 0;
+}
+
+/* @media (min-width: 1200px) {
+  h1 {
+    font-size: 5rem !important;
+  }
+} */
