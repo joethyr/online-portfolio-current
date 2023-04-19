@@ -146,3 +146,16 @@ li {
   padding: 1rem;
   color: white;
 }
+
+.project-thumbnail {
+  border-radius: 1rem;
+  -webkit-filter: brightness(100%);
+  transition: 0.3s ease;
+}
+
+.project-thumbnail:hover {
+  border-radius: 1rem;
+  -webkit-filter: brightness(50%);
+  transform: scale(1.03);
+  transition: 0.3s ease;
+}
