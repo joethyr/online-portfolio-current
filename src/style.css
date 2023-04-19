@@ -10,6 +10,7 @@ html {
 
 * {
   font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
 }
 
 body {
@@ -18,7 +19,7 @@ body {
 }
 
 section {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .hero {
@@ -97,7 +98,7 @@ li {
 .hero-container {
   display: flex;
   /* flex-direction: column; */
-  height: 100%;
+  height: 100vh;
   justify-content: space-between;
   align-items: center;
 }
@@ -158,4 +159,45 @@ li {
   -webkit-filter: brightness(50%);
   transform: scale(1.03);
   transition: 0.3s ease;
+}
+
+/* ABOUT ME SECTION */
+.about-me-section {
+  color: white;
+}
+
+.about-me-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+  font-size: 1.3rem;
+}
+
+.about-me-section > h2 {
+  font-weight: 700;
+}
+
+.about-me-leftside {
+  flex: 1.5 1;
+}
+
+.about-me-rightside {
+  flex: 1.5 1;
+}
+
+/* 320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px  */
+
+@media (max-width: 992px) {
+  .about-me-content {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-me-content {
+    font-size: 1rem;
+  }
 }
