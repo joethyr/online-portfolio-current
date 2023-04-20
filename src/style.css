@@ -211,3 +211,15 @@ footer {
 .resume-link {
   text-decoration: none;
 }
+
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+@media (max-width: 350px) {
+  .contact-section {
+    flex-direction: column;
+  }
+}

@@ -63,13 +63,13 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="#">About Me</a>
+                <a class="nav-link" href="#about-me">About Me</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
+                <a class="nav-link" href="#projects">Projects</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact Me</a>
+                <a class="nav-link" href="#contact">Contact Me</a>
               </li>
             </ul>
           </div>
@@ -106,10 +106,10 @@
         </div>
       </div>
     </section>
-    <section class="projects-section container">
+    <section class="projects-section container" id="projects">
       <h2 class="display-2">Personal Projects</h2>
       <div class="slider">
-        <div class="item">
+        <!-- <div class="item">
           <a href="https://joethyr.github.io/weather-app/" target="_blank">
             <img
               src="src/images/weather-react-thumbnail.png"
@@ -119,7 +119,7 @@
           </a>
           <div class="project-description">
             <div class="d-flex justify-content-between pe-1">
-              <h3>React Weather App</h3>
+              <h3>Weather App</h3>
               <a href="https://github.com/joethyr/weather-app" target="_blank">
                 <i class="fa-brands project-icon fa-github fa-2x"></i>
               </a>
@@ -129,6 +129,31 @@
               to users. The application features a simple UI that allows users
               to easily input their city location and get accurate weather
               forecasts for their area.
+            </p>
+          </div>
+        </div> -->
+        <div class="item">
+          <a href="https://joethyr.github.io/todo-list-react/" target="_blank">
+            <img
+              src="src/images/react-todo-list.png"
+              alt="Todo List App Thumbnail"
+              class="project-thumbnail"
+            />
+          </a>
+          <div class="project-description">
+            <div class="d-flex justify-content-between pe-1">
+              <h3>React Todo List</h3>
+              <a
+                href="https://github.com/joethyr/todo-list-react/"
+                target="_blank"
+              >
+                <i class="fa-brands project-icon fa-github fa-2x"></i>
+              </a>
+            </div>
+            <p>
+              A Todo List Application built using the React Library. Users can
+              add new tasks, mark them as completed, and delete them if
+              necessary.
             </p>
           </div>
         </div>
@@ -190,33 +215,29 @@
             </p>
           </div>
         </div>
-
         <div class="item">
-          <a href="https://joethyr.github.io/todo-list-react/" target="_blank">
+          <a href="https://joethyr.github.io/weather-app/" target="_blank">
             <img
-              src="src/images/react-todo-list.png"
-              alt="Todo List App Thumbnail"
+              src="src/images/weather-react-thumbnail.png"
+              alt="Weater App Site Thumbnail"
               class="project-thumbnail"
             />
           </a>
           <div class="project-description">
             <div class="d-flex justify-content-between pe-1">
-              <h3>React Todo List</h3>
-              <a
-                href="https://joethyr.github.io/todo-list-react/"
-                target="_blank"
-              >
+              <h3>Weather App</h3>
+              <a href="https://github.com/joethyr/weather-app" target="_blank">
                 <i class="fa-brands project-icon fa-github fa-2x"></i>
               </a>
             </div>
             <p>
-              A Todo List Application built using the React Library. Users can
-              add new tasks, mark them as completed, and delete them if
-              necessary.
+              App that uses a weather API to provide real-time weather updates
+              to users. The application features a simple UI that allows users
+              to easily input their city location and get accurate weather
+              forecasts for their area.
             </p>
           </div>
         </div>
-
         <div class="item">
           <a href="https://warm-dusk-57424.herokuapp.com/" target="_blank">
             <img
@@ -348,7 +369,7 @@
         </div>
       </div>
     </section>
-    <section class="about-me-section container">
+    <section class="about-me-section container" id="about-me">
       <h2 class="display-2">About Me</h2>
       <div class="about-me-content">
         <div class="about-me-leftside">
@@ -382,48 +403,43 @@
         </div>
       </div>
     </section>
-    <footer class="contact-section container-fluid shadow-lg mt-3">
+
+    <footer class="shadow-lg mt-3" id="contact">
       <div class="contact-section container">
-        <!-- <h3 class="display-5">Contact Me</h3>
-        <p>
-          If you found my portfolio compelling and would like to learn more
-          about my work, please don't hesitate to contact me.
-        </p>
-        <p>4778 West Mineral Ave, Littleton, CO 80128</p>
-        <p>720-646-8941</p>
-        <p>joethayer94@gmail.com</p>
-        <button>Scroll Back to the Top</button> -->
+        <div class="contact-left">
+          <h3 class="display-5">Contact Me</h3>
+          <p>
+            If you believe that I would be an excellent match for the position,
+            please do not hesitate to contact me.
+          </p>
+          <p>4778 West Mineral Ave, Littleton, CO 80128</p>
 
-        <h4>Contact Me</h4>
-        <p>
-          If you believe that I would be an excellent match for the position,
-          please do not hesitate to contact me.
-        </p>
-        <p>4778 West Mineral Ave, Littleton, CO 80128</p>
-
-        <p>
-          <span><i class="fa-solid fa-phone pe-2 fa-lg"></i>720-646-8941</span>
-        </p>
-        <p>
-          <span
-            ><i class="fa-solid fa-envelope pe-2 fa-lg"></i
-            ><a
-              href="mailto:joethayer94@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              >joethayer94@gmail.com</a
-            ></span
-          >
-        </p>
-        <div class="contact-links">
-          <div>
+          <p>
+            <span
+              ><i class="fa-solid fa-phone pe-2 fa-lg"></i>720-646-8941</span
+            >
+          </p>
+          <p>
+            <span
+              ><i class="fa-solid fa-envelope pe-2 fa-lg"></i
+              ><a
+                href="mailto:joethayer94@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                >joethayer94@gmail.com</a
+              ></span
+            >
+          </p>
+        </div>
+        <div class="contact-right">
+          <div class="contact-links">
             <a
               href="https://www.linkedin.com/in/joseph-thayer-78383717b/"
               target="_blank"
-              ><i class="contact-link fa-brands fa-linkedin fa-3x pe-4"></i
+              ><i class="contact-link fa-brands fa-linkedin fa-2x pe-4"></i
             ></a>
             <a href="https://github.com/joethyr" target="_blank"
-              ><i class="contact-link fa-brands fa-github fa-3x"></i
+              ><i class="contact-link fa-brands fa-github fa-2x"></i
             ></a>
           </div>
         </div>
